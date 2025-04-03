@@ -135,6 +135,15 @@ public:
 
   ~EspMQTTClient();
 
+  //setters
+  const char* wifiSsid;
+  const char* wifiPassword;
+  const char* mqttServerIp;
+  const char* mqttUsername;
+  const char* mqttPassword;
+  const char* mqttClientName;
+  const uint16_t mqttServerPort;
+
   // Optional functionality
   void enableDebuggingMessages(const bool enabled = true); // Allow to display useful debugging messages. Can be set to false to disable them during program execution
   void enableHTTPWebUpdater(const char* username, const char* password, const char* address = "/"); // Activate the web updater, must be set before the first loop() call.
